@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyBook App</string>
+    <string name="add_new_book">Add New Book</string>
+    <string name="delete_question">do you want delete?</string>
+    <string name="dialog_confirm">Confirm?</string>
+    <string name="dialog_cancel">CENCLE</string>
+</resources>

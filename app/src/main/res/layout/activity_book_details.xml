@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".BookDetails"
+    android:orientation="vertical"
+    android:layout_margin="15dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/authortext"
+        android:id="@+id/answertext"
+        android:textSize="40sp"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:id="@+id/authortext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/answertext"
+        app:layout_constraintBottom_toTopOf="@id/commenttext"
+        android:textColor="#000000"
+        android:textSize="30sp"
+      />
+
+    <TextView
+        android:id="@+id/commenttext"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintTop_toBottomOf="@id/authortext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:inputType="textMultiLine"
+        android:scrollHorizontally="false"
+        android:scrollbars="vertical"
+         />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
